@@ -1,0 +1,22 @@
+Xorume 
+#Resumo estatístico
+print(df.describe())
+
+#Filtragem
+#Para utilizar o data frame sera usado df[]
+# O operador > significa maior 
+# df[df["Nota"] > 8] Aqui irá mostrar somente as notas que são maiores que 8
+print(df[df["Nota"] > 8])
+
+# Frequência
+# value_counts significa contar os valores de cada chave 
+# Para utilizar o data frame sempre sera df[]
+print(df["Cidade"].value_counts())
+
+# Dados faltantes 
+# Dados faltantes serão os dados que está vazio ou nulo
+# Aqui irá mostrar os dados que estão faltando
+print(df.isnull())
+
+# Mostra a quantidade de dados faltantes.
+print(df.isnull().sum())
